@@ -1,0 +1,45 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+li{
+    list-style: none;
+}
+.slide-wrapper {
+    width:960px;
+    height:300px;
+    position: relative;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.slides {
+    position: absolute;
+    left: 0;
+    top:0;
+    display: flex;
+    transition: all 0.3s;
+}
+li:not(last-child){
+    margin-right:30px ;
+}
+
+.controls{
+    text-align: center;
+   margin-top: 50px;
+}
+.controls span {
+    background: #282626;
+    color:white;
+    padding:10px 20px;
+    border-radius: 4px;
+
+}
+.controls span:hover {
+    background: #949090;
+    transition: all 0.2s;
+}
+.controls span:active {
+    background: #6c6969;
+    transition: all 0.2s;
+}
